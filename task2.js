@@ -1,16 +1,34 @@
-let i,j,count=0;
-var mystring=prompt("please enter your string");
-const chars = ["a", "e", "o","u","i"];
-
-for(i=0;i<mystring.length;i++)
-{
-for(j=0;j<chars.length;j++)
-{
-    if(mystring[i]==chars[j])
-    {
-        count++
-    }
-}
-}
-
-alert(count);
+let myarray=["red", "blue", "black", "pink"];
+//***************************************************************************************** 
+//console.log(Array.isArray(myarray));
+//*****************************************************************************************
+let array1 = ['a', 'b', 'c'];
+let array2 = ['d', 'e', 'f'];
+let array3 = array1.concat(array2);
+//console.log(array3);
+//***************************************************************************************** 
+let array4 = [1, 2, 3, 4, 5, 6];
+//console.log(array4.fill(0, 3));
+//***************************************************************************************** 
+let result = myarray.filter(word => word.length <= 4);
+//console.log(result);
+//*****************************************************************************************
+let array5 = [5, 7, 8, 130, 44];
+let found = array5.find(element => element > 10);
+//console.log(found);
+//*****************************************************************************************
+let array6 = [5, 12, 8, 130, 44];
+let isLargeNumber = (element) => element > 13;
+//console.log(array6.findIndex(isLargeNumber));
+//*****************************************************************************************
+let array7 = [5, 12, 8, 130, 44];
+//array7.forEach(element => console.log(element*2));
+//*****************************************************************************************
+let array8 = [5, 12, 8, 130, 44];
+//console.log(array8.includes(2));
+//console.log(array8.includes(8));
+//*****************************************************************************************
+//console.log(myarray.indexOf('blue'));
+//*****************************************************************************************
+let array9 = [5, 12, 5, 130 ,5, 44];
+console.log(array9.lastIndexOf(5));
